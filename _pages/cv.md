@@ -30,20 +30,15 @@ Over the last 5 years, I have worked tirelessly to transform my talent from youn
 ### Educational Training
 *2026*: **MSc Data Science, University of Leeds**
 
-*2024*: **Level 4 Data Fellowship, Multiverse/ITV**
-Grade: Distinction
-EPA: *DataMatch Campaign Measurement* 
+*2024*: **Level 4 Data Fellowship, Multiverse / ITV**
 
 *2021*: **BSc Mathematics, University of Kent** 
-Grade: Upper Second Class with Honours
-Dissertation: *The Topological Classification of Surfaces*
+
 
 ### Skills
 **Data Tooling**: MS Excel / G Sheets, GCP, Databricks, Tableau
+
 **Programming**: SQL, Python, R, LaTeX
+
 **ITSM & Project Management**: Jira, Freshservice, Scrum, Kanban
-**Interpersonal**: Stakeholder Management, Complex Problem Solving, Accountability
 
-### Hobbies
-
-I am an avid table tennis player, playing competitively in my local league. I was a gymnast formerly; my greatest sporting achievement was becoming the Kent Under 13’s Champion in 2011. I play piano to Grade 7 standard, and remain a loyal follower of the EDM community - with an ’encyclopaedia’ of music to match!

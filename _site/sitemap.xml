@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
+<loc>http://localhost:4000/projects/project-1/</loc>
+<lastmod>2025-05-29T13:06:54+01:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/about/</loc>
 </url>
 <url>
@@ -18,5 +22,9 @@
 <url>
 <loc>http://localhost:4000/assets/Ben%20Coake%20CV.pdf</loc>
 <lastmod>2025-05-29T01:31:54+01:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/assets/OMAT5203M%20Ass2_A.pdf</loc>
+<lastmod>2025-05-29T13:06:05+01:00</lastmod>
 </url>
 </urlset>
