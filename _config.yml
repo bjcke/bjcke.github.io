@@ -11,27 +11,17 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # theme                  : "minimal-mistakes-jekyll"
-sass:
-  style: compressed
-
-defaults:
-  - scope:
-      path: ""
-      type: "css"
-    values:
-      permalink: /assets/css/:name.css
-
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "neon" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-GB"
 rtl                      : # true, false (default) # turns direction of the page into right to left for RTL languages
-title                    : "Site Title"
+title                    : #"Site Title"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Your Name"
-description              : "An amazing website."
+subtitle                 : #"Site Subtitle"
+name                     : #"Ben Coake"
+description              : #"An amazing website."
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -125,41 +115,16 @@ analytics:
 author:
   name             : "Ben Coake"
   avatar           : /assets/images/id_pic.png
-  bio              : "I am an **amazing** person."
+  bio              : "Addicted to squeezing as much insight out of data as humanly possible. Currently immersed in the advertising technology industry, building addressable ad targeting solutions for the UK's largest commercial broadcaster, ITV."
   location         : "London, UK"
-  email            : # "coakeben@gmail.com"
+  email            : "coakeben@gmail.com"
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:coakeben@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://uk.linkedin.com/in/bencoake"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/bjcke"
-
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
 
 
 # Reading Files
