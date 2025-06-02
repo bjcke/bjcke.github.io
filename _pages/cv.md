@@ -10,7 +10,7 @@ layout: single
 ### Profile
 *“Dependable, efficient and highly ambitious STEM graduate with a passion for Data Science”*
 
-Over the last 5 years, I have worked tirelessly to transform my talent from young worker and student to experienced professional with the qualifications to match. There is no greater joy than sharing my knowledge with peers, and motivating people to fulfil their potential. Especially in the current economic climate, businesses are continually changing, and this does not phase me. Adapting to situations is made simple by using a combination of training, experience, and personal judgement to overcome obstacles. I have an affinity for numbers and data, thriving in areas with the toughest time restrictions or budgets. I think conscientiously and look for smaller details that others miss, making me just as analytical as I am efficient.
+During recent years I have worked tirelessly to transform my talent, from young worker and student to experienced professional with the qualifications to match. There is no greater joy than sharing my knowledge with peers, and motivating people to fulfil their potential. Especially in the current economic climate, businesses are continually changing, and this does not phase me. Adapting to situations is made simple by using a combination of training, experience, and personal judgement to overcome obstacles. I have an affinity for numbers and data, thriving in areas with the toughest time restrictions or budgets. I think conscientiously and look for smaller details that others miss, making me just as analytical as I am efficient.
 
 ### Employment History
 **Data Analyst, ITV** 
