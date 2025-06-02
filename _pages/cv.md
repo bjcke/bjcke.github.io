@@ -3,7 +3,6 @@ title: "CV"
 permalink: /cv/
 layout: single
 ---
-[← Back to Home](/)
 
 [📄 Download PDF](../assets/Ben Coake CV.pdf)
 

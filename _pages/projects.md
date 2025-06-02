@@ -3,19 +3,19 @@ title: "Projects"
 permalink: /projects/
 layout: single
 ---
-[← Back to Home](/)
 
 <!-- FILTER BUTTONS -->
 <div id="filter-bar">
   <button class="filter-btn" data-type="All">All</button>
   <button class="filter-btn" data-type="Academic">Academic</button>
-  <button class="filter-btn" data-type="Professional">Professional</button>
+  <!-- button class="filter-btn" data-type="Professional">Professional</button>
   <!-- Add more types as needed -->
 </div>
 
 <!-- PROJECT GRID -->
 <div class="project-grid">
-  {% for project in site.projects %}
+  {% assign sorted_projects = site.projects | sort: "submission" | reverse %}
+  {% for project in sorted_projects %}
   <div class="project-card" data-type="{{ project.type }}">
     <div class="project-tags">
       {% for tag in project.tags %}
@@ -90,7 +90,7 @@ layout: single
     background-color: transparent;
     border: 2px solid var(--red);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem; /* top padding increased */
     color: var(--text);
     display: flex;
     flex-direction: column;
@@ -101,12 +101,13 @@ layout: single
 
   .project-tags {
     position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
-    flex-direction: row;
+    padding-right: 0.25rem;  /* optional breathing room */
   }
 
   .tag {

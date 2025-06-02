@@ -110,12 +110,6 @@
               >Projects</a>
             </li><li class="masthead__menu-item">
               <a
-                href="/about/"
-                
-                
-              >About</a>
-            </li><li class="masthead__menu-item">
-              <a
                 href="/cv/"
                 
                 
@@ -165,28 +159,71 @@
 
       <section class="page__content" itemprop="text">
         
-        <p><a href="/">← Back to Home</a></p>
-
-<!-- FILTER BUTTONS -->
+        <!-- FILTER BUTTONS -->
 <div id="filter-bar">
   <button class="filter-btn" data-type="All">All</button>
   <button class="filter-btn" data-type="Academic">Academic</button>
-  <button class="filter-btn" data-type="Professional">Professional</button>
+  <!-- button class="filter-btn" data-type="Professional">Professional</button>
   <!-- Add more types as needed -->
 </div>
 
 <!-- PROJECT GRID -->
 <div class="project-grid">
   
+  
   <div class="project-card" data-type="Academic">
     <div class="project-tags">
+      
+        <span class="tag">Statistics</span>
       
         <span class="tag">R</span>
       
       <span class="type-pill">Academic</span>
     </div>
     <div class="project-title">
-      <a href="/projects/project-1/">Statistical Learning</a>
+      <a href="/projects/statistical_learning/">Statistical Learning</a>
+    </div>
+  </div>
+  
+  <div class="project-card" data-type="Academic">
+    <div class="project-tags">
+      
+        <span class="tag">Statistics</span>
+      
+        <span class="tag">Python</span>
+      
+      <span class="type-pill">Academic</span>
+    </div>
+    <div class="project-title">
+      <a href="/projects/programming_for_data_science/">Programming for Data Science</a>
+    </div>
+  </div>
+  
+  <div class="project-card" data-type="Academic">
+    <div class="project-tags">
+      
+        <span class="tag">Mathematics</span>
+      
+        <span class="tag">LaTeX</span>
+      
+      <span class="type-pill">Academic</span>
+    </div>
+    <div class="project-title">
+      <a href="/projects/topological_classificaiton_of_surfaces/">Topology Dissertation</a>
+    </div>
+  </div>
+  
+  <div class="project-card" data-type="Academic">
+    <div class="project-tags">
+      
+        <span class="tag">Mathematics</span>
+      
+        <span class="tag">LaTeX</span>
+      
+      <span class="type-pill">Academic</span>
+    </div>
+    <div class="project-title">
+      <a href="/projects/euler_characteristic/">Euler Characteristic</a>
     </div>
   </div>
   
@@ -252,7 +289,7 @@
     background-color: transparent;
     border: 2px solid var(--red);
     border-radius: 1rem;
-    padding: 1rem;
+    padding: 1.5rem 1rem 1rem 1rem; /* top padding increased */
     color: var(--text);
     display: flex;
     flex-direction: column;
@@ -263,12 +300,13 @@
 
   .project-tags {
     position: absolute;
-    top: 0.75rem;
-    left: 0.75rem;
+    top: 0.5rem;
+    left: 0.5rem;
+    right: 0.5rem;
     display: flex;
     flex-wrap: wrap;
     gap: 0.3rem;
-    flex-direction: row;
+    padding-right: 0.25rem;  /* optional breathing room */
   }
 
   .tag {

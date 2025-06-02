@@ -120,12 +120,6 @@
               >Projects</a>
             </li><li class="masthead__menu-item">
               <a
-                href="/about/"
-                
-                
-              >About</a>
-            </li><li class="masthead__menu-item">
-              <a
                 href="/cv/"
                 
                 
@@ -275,20 +269,89 @@
     
 
 
-<h3 class="archive__subtitle">Recent posts</h3>
 
-
-
-
-<div class="entries-list">
+<div class="home-intro">
   
-
-
-
-
+  Welcome to my site!
 </div>
 
+<h3 class="archive__subtitle">Recent Projects</h3>
 
+
+
+
+<div class="recent-projects">
+  
+    <div class="project-card">
+      <div class="project-card-left">
+        <a href="/projects/statistical_learning/" class="project-link">Statistical Learning</a>
+      </div>
+      <div class="project-card-right">
+        
+          <span class="tag-pill">Statistics</span>
+        
+          <span class="tag-pill">R</span>
+        
+        
+          <span class="tag-pill">Academic</span>
+        
+      </div>
+    </div>
+  
+</div>
+
+<style>
+  .recent-projects {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+  }
+
+  .project-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #bebebe; /* your grey background */
+    border-radius: 1rem;
+    padding: 1.25rem 1.5rem;
+    flex-wrap: wrap;
+  }
+
+  .project-card-left {
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .project-link {
+    color: #0e0e0e; /* your red */
+    text-decoration: none;
+  }
+
+  .project-link:hover {
+    text-decoration: underline;
+  }
+
+  .project-card-right {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: flex-end;
+  }
+
+  .tag-pill {
+    display: inline-block;
+    padding: 0.3rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #0e0e0e;
+    border: 1px solid #0e0e0e;
+    border-radius: 999px;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+</style>
 
 
   </div>
