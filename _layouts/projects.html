@@ -1,0 +1,71 @@
+---
+layout: page
+---
+
+
+<!-- Filter buttons -->
+<div id="typeFilters" style="margin-bottom: 1em;">
+  <button class="filter-btn active" data-type="all">All</button>
+  {% assign all_types = site.projects | map: "type" | uniq | sort %}
+  {% for t in all_types %}
+    <button class="filter-btn" data-type="{{ t | downcase }}">{{ t | upcase }}</button>
+  {% endfor %}
+</div>
+
+<!-- Projects list -->
+<ul id="projectsList">
+  {% assign sorted_projects = site.projects | sort: "submission" | reverse %}
+  {% for project in sorted_projects %}
+    <li data-type="{{ project.type | downcase }}">
+      <a href="{{ project.url }}">{{ project.title }}</a><br/>
+      <strong>{{ project.type | upcase }}</strong><br/>
+      {% if project.tags %}
+        <em>Tags: {{ project.tags | join: ", " }}</em>
+      {% endif %}
+    </li>
+  {% endfor %}
+</ul>
+
+<!-- JavaScript for filtering -->
+<script>
+  const filterButtons = document.querySelectorAll('#typeFilters .filter-btn');
+  const projectsList = document.getElementById('projectsList');
+  const projects = projectsList.getElementsByTagName('li');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      // Add active class to clicked button
+      button.classList.add('active');
+
+      const selectedType = button.getAttribute('data-type');
+
+      for (const project of projects) {
+        if (selectedType === 'all' || project.getAttribute('data-type') === selectedType) {
+          project.style.display = '';
+        } else {
+          project.style.display = 'none';
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  #typeFilters .filter-btn {
+    cursor: pointer;
+    margin-right: 0.5em;
+    padding: 0.3em 0.8em;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  #typeFilters .filter-btn.active {
+    background: #d80909;
+    color: white;
+    border-color: #d80909;
+  }
+</style>

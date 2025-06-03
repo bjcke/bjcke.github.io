@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1">
+    
+    <title>Ben Coake</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/assets/styles.css"></head>
+<body><input class="dark-mode-checkbox sr-only" id="dark-mode" type="checkbox">
+<input class="typo-plus-checkbox sr-only" id="typo-plus" type="checkbox">
+<input class="typo-dys-checkbox sr-only" id="typo-dys" type="checkbox">
+<div class="theme-container grow">
+<header>
+    <div class="site_title" role="heading" aria-level="1">
+      <a href="/" class="site-title">
+        Ben Coake
+      </a>
+    </div>
+  <nav>
+      
+      
+        
+      
+        
+            <a href="/cv/" class="pages_links">
+              <span class="pages_names">CV</span>
+            </a>
+        
+      
+        
+      
+        
+            <a href="/projects/" class="pages_links">
+              <span class="pages_names">Projects</span>
+            </a>
+        
+      
+        
+      
+        
+      
+  </nav>
+</header>
+<main class="page_content" aria-label="Content">
+      
+    <article>
+  <h1>Example Post n°01</h1>
+  
+  
+
+
+<div class="post_footer">
+  <h2 class="list_post_info">
+    
+      <a href="/categories/p-quod">P_Quod</a> ✷
+    
+      <a href="/categories/another-p-quod">Another P_Quod</a> ✷
+      11 November 2022
+  </h2>
+</div>
+  <div class="line"></div>
+</article>
+
+
+    </main>      <footer>
+        © Ben Coake. Made with Jekyll and <a href="https://github.com/PQuod/simply-cyan-theme" target="_blank" rel="noopener noreferrer">Simply Cyan</a>
+      </footer>
+    </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.dark-mode-checkbox');
+
+  checkbox.checked = localStorage.getItem('darkMode') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('darkMode', event.currentTarget.checked);
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-plus-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoPlus') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoPlus', event.currentTarget.checked);
+  });
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-dys-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoDys') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoDys', event.currentTarget.checked);
+  });
+});
+</script>
+</body>
+</html>

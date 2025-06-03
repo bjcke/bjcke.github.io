@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1">
+    
+    <title>Ben Coake</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/assets/styles.css"></head>
+<body><input class="dark-mode-checkbox sr-only" id="dark-mode" type="checkbox">
+<input class="typo-plus-checkbox sr-only" id="typo-plus" type="checkbox">
+<input class="typo-dys-checkbox sr-only" id="typo-dys" type="checkbox">
+<div class="theme-container grow">
+<header>
+    <div class="site_title" role="heading" aria-level="1">
+      <a href="/" class="site-title">
+        Ben Coake
+      </a>
+    </div>
+  <nav>
+      
+      
+        
+      
+        
+            <a href="/cv/" class="pages_links">
+              <span class="pages_names">CV</span>
+            </a>
+        
+      
+        
+      
+        
+            <a href="/projects/" class="pages_links">
+              <span class="pages_names">Projects</span>
+            </a>
+        
+      
+        
+      
+        
+      
+  </nav>
+</header>
+<main class="page_content" aria-label="Content">
+      
+    <article>
+  <div class="line"></div>
+  <h1></h1>
+  
+  <p align="center">
+  <img src="/assets/id_pic.png" alt="Profile picture" class="profile-pic" />
+</p>
+
+<div class="social-links">
+  <a href="mailto:coakeben@gmail.com" title="Email" target="_blank" rel="noopener">
+    <i class="fa-solid fa-envelope"></i>
+  </a>
+  <a href="https://github.com/bjcke" title="GitHub" target="_blank" rel="noopener">
+    <i class="fa-brands fa-github"></i>
+  </a>
+  <a href="https://uk.linkedin.com/in/bencoake" title="LinkedIn" target="_blank" rel="noopener">
+    <i class="fa-brands fa-linkedin"></i>
+  </a>
+</div>
+
+<style>
+.profile-pic {
+  width: 150px;         /* adjust size */
+  height: 150px;        /* same as width to keep circle */
+  object-fit: cover;    /* crop and fill */
+  border-radius: 50%;   /* makes it a circle */
+  display: block;
+  margin: 0 auto;       /* centers block element */
+  border: 3px solid #ccc; /* optional: add a border */
+}
+
+.social-links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color:rgb(186, 186, 186);
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.social-links a:hover {
+  color: #d80909; /* Customize hover color */
+}
+</style>
+
+
+  <div class="line"></div>
+</article>
+
+
+    </main>      <footer>
+        © Ben Coake. Made with Jekyll and <a href="https://github.com/PQuod/simply-cyan-theme" target="_blank" rel="noopener noreferrer">Simply Cyan</a>
+      </footer>
+    </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.dark-mode-checkbox');
+
+  checkbox.checked = localStorage.getItem('darkMode') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('darkMode', event.currentTarget.checked);
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-plus-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoPlus') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoPlus', event.currentTarget.checked);
+  });
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-dys-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoDys') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoDys', event.currentTarget.checked);
+  });
+});
+</script>
+</body>
+</html>

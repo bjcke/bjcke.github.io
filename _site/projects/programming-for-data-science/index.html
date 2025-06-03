@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1">
+    
+    <title>Ben Coake</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/assets/styles.css"></head>
+<body><input class="dark-mode-checkbox sr-only" id="dark-mode" type="checkbox">
+<input class="typo-plus-checkbox sr-only" id="typo-plus" type="checkbox">
+<input class="typo-dys-checkbox sr-only" id="typo-dys" type="checkbox">
+<div class="theme-container grow">
+<header>
+    <div class="site_title" role="heading" aria-level="1">
+      <a href="/" class="site-title">
+        Ben Coake
+      </a>
+    </div>
+  <nav>
+      
+      
+        
+      
+        
+            <a href="/cv/" class="pages_links">
+              <span class="pages_names">CV</span>
+            </a>
+        
+      
+        
+      
+        
+            <a href="/projects/" class="pages_links">
+              <span class="pages_names">Projects</span>
+            </a>
+        
+      
+        
+      
+        
+      
+  </nav>
+</header>
+<main class="page_content" aria-label="Content">
+      
+    <article>
+  <h1>Programming for Data Science</h1>
+  
+  <h2 id="overview">Overview</h2>
+<p><strong>Grade Received</strong>: Distinction (77%)</p>
+
+<p>This piece of work is a Level 7 (MSc) submission to University of Leeds, for a module entitled <em>Programming for Data Science</em>. The brief was open-ended, with a requirement to identify a dataset appropriate for a small analysis project using Python in Jupyter Notebook. I entitled my analysis “<em>Aggression and Performance within the English Premier League from 2000-2024</em>”.</p>
+
+<p><strong>Full assessment brief and rubric</strong></p>
+<ul>
+  <li>Include an overview of the chosen data and project aims</li>
+  <li>Provide all Python code, visualisations and conclusions to support the project aims</li>
+  <li>Evidence the application of fundamental programming concepts in Python</li>
+  <li>Evidence the formulation of appropriate algorithms with their translation into functioning Python code</li>
+  <li>Evidence effective communication of data analysis using Python</li>
+</ul>
+
+<h2 id="full-report">Full Report</h2>
+<iframe src="/assets/Programming%20for%20Data%20Science%20Ass2.pdf" width="100%" height="800px" style="border: none;"></iframe>
+
+
+<table class="archives-table">
+    
+        
+        
+            
+        
+            
+        
+    
+</table>
+
+  <div class="line"></div>
+</article>
+
+
+    </main>      <footer>
+        © Ben Coake. Made with Jekyll and <a href="https://github.com/PQuod/simply-cyan-theme" target="_blank" rel="noopener noreferrer">Simply Cyan</a>
+      </footer>
+    </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.dark-mode-checkbox');
+
+  checkbox.checked = localStorage.getItem('darkMode') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('darkMode', event.currentTarget.checked);
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-plus-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoPlus') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoPlus', event.currentTarget.checked);
+  });
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-dys-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoDys') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoDys', event.currentTarget.checked);
+  });
+});
+</script>
+</body>
+</html>

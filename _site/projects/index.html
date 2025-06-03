@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<html lang="en-GB">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, intial-scale=1">
+    
+    <title>Ben Coake</title>
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/assets/styles.css"></head>
+<body><input class="dark-mode-checkbox sr-only" id="dark-mode" type="checkbox">
+<input class="typo-plus-checkbox sr-only" id="typo-plus" type="checkbox">
+<input class="typo-dys-checkbox sr-only" id="typo-dys" type="checkbox">
+<div class="theme-container grow">
+<header>
+    <div class="site_title" role="heading" aria-level="1">
+      <a href="/" class="site-title">
+        Ben Coake
+      </a>
+    </div>
+  <nav>
+      
+      
+        
+      
+        
+            <a href="/cv/" class="pages_links">
+              <span class="pages_names">CV</span>
+            </a>
+        
+      
+        
+      
+        
+            <a href="/projects/" class="pages_links">
+              <span class="pages_names">Projects</span>
+            </a>
+        
+      
+        
+      
+        
+      
+  </nav>
+</header>
+<main class="page_content" aria-label="Content">
+      
+    <article>
+  <h1>Projects</h1>
+  
+  <!-- Filter buttons -->
+<div id="typeFilters" style="margin-bottom: 1em;">
+  <button class="filter-btn active" data-type="all">All</button>
+  
+  
+    <button class="filter-btn" data-type="academic">ACADEMIC</button>
+  
+</div>
+
+<!-- Projects list -->
+<ul id="projectsList">
+  
+  
+    <li data-type="academic">
+      <a href="/projects/statistical-learning/">Statistical Learning</a><br />
+      <strong>ACADEMIC</strong><br />
+      
+        <em>Tags: Statistics, R</em>
+      
+    </li>
+  
+    <li data-type="academic">
+      <a href="/projects/programming-for-data-science/">Programming for Data Science</a><br />
+      <strong>ACADEMIC</strong><br />
+      
+        <em>Tags: Statistics, Python</em>
+      
+    </li>
+  
+    <li data-type="academic">
+      <a href="/projects/topological-classificaiton-of-surfaces/">Topology Dissertation</a><br />
+      <strong>ACADEMIC</strong><br />
+      
+        <em>Tags: Mathematics, LaTeX</em>
+      
+    </li>
+  
+    <li data-type="academic">
+      <a href="/projects/euler-characteristic/">Euler Characteristic</a><br />
+      <strong>ACADEMIC</strong><br />
+      
+        <em>Tags: Mathematics, LaTeX</em>
+      
+    </li>
+  
+</ul>
+
+<!-- JavaScript for filtering -->
+<script>
+  const filterButtons = document.querySelectorAll('#typeFilters .filter-btn');
+  const projectsList = document.getElementById('projectsList');
+  const projects = projectsList.getElementsByTagName('li');
+
+  filterButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      // Remove active class from all buttons
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      // Add active class to clicked button
+      button.classList.add('active');
+
+      const selectedType = button.getAttribute('data-type');
+
+      for (const project of projects) {
+        if (selectedType === 'all' || project.getAttribute('data-type') === selectedType) {
+          project.style.display = '';
+        } else {
+          project.style.display = 'none';
+        }
+      }
+    });
+  });
+</script>
+
+<style>
+  #typeFilters .filter-btn {
+    cursor: pointer;
+    margin-right: 0.5em;
+    padding: 0.3em 0.8em;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 4px;
+    font-weight: 600;
+  }
+
+  #typeFilters .filter-btn.active {
+    background: #d80909;
+    color: white;
+    border-color: #d80909;
+  }
+</style>
+
+  <div class="line"></div>
+</article>
+
+
+    </main>      <footer>
+        © Ben Coake. Made with Jekyll and <a href="https://github.com/PQuod/simply-cyan-theme" target="_blank" rel="noopener noreferrer">Simply Cyan</a>
+      </footer>
+    </div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.dark-mode-checkbox');
+
+  checkbox.checked = localStorage.getItem('darkMode') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('darkMode', event.currentTarget.checked);
+  });
+});
+
+  document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-plus-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoPlus') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoPlus', event.currentTarget.checked);
+  });
+});
+
+    document.addEventListener('DOMContentLoaded', function () {
+  const checkbox = document.querySelector('.typo-dys-checkbox');
+
+  checkbox.checked = localStorage.getItem('typoDys') === 'true';
+
+  checkbox.addEventListener('change', function (event) {
+    localStorage.setItem('typoDys', event.currentTarget.checked);
+  });
+});
+</script>
+</body>
+</html>

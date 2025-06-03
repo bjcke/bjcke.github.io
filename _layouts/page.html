@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<article>
+  <h1>{{ page.title }}</h1>
+  {% assign biocontent = page.content | strip_newlines %}
+  {{ content }}
+  <div class="line"></div>
+</article>
