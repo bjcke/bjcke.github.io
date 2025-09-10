@@ -1,99 +1,121 @@
 <!DOCTYPE html>
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-<html lang="en-GB">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, intial-scale=1">
-    
-      <meta name="robots" content="noindex">
-    
-    <title>Ben Coake</title>
-    <meta name="description" content="">
-    <link rel="stylesheet" href="/assets/styles.css"></head>
-<body><input class="dark-mode-checkbox sr-only" id="dark-mode" type="checkbox">
-<input class="typo-plus-checkbox sr-only" id="typo-plus" type="checkbox">
-<input class="typo-dys-checkbox sr-only" id="typo-dys" type="checkbox">
-<div class="theme-container grow">
-<header>
-    <div class="site_title" role="heading" aria-level="1">
-      <a href="/" class="site-title">
-        Ben Coake
-      </a>
-    </div>
-  <nav>
-      
-      
-        
-      
-        
-            <a href="/cv/" class="pages_links">
-              <span class="pages_names">CV</span>
-            </a>
-        
-      
-        
-      
-        
-            <a href="/projects/" class="pages_links">
-              <span class="pages_names">Projects</span>
-            </a>
-        
-      
-        
-      
-        
-      
-  </nav>
-</header>
-<main class="page_content" aria-label="Content">
-      
-    <article>
-  <h1>404</h1>
+<html lang="en-UK">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404</title>
+  <meta name="description" content="Personal portfolio page for Ben Coake">
+  <link rel="canonical" href="http://localhost:4000/404.html">
+  <link rel="alternate" type="application/rss+xml" title="Ben Coake Feed"
+    href="http://localhost:4000/feed.xml">
   
-  <p>Oooops it’s a 404 error!</p>
+  <link rel="shortcut icon" href="/images/favicon.png" type="image/png" />
+  
+  <!-- Styles -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700,700i%7CNoto+Serif:400,400i,700,700i&display=swap" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body>
 
-<p>Looks like you’re lost on a page that doesn’t exist.</p>
+  <div id="page" class="site">
+    <div class="inner">
+      <header class="site-header">
+  
+  <p class="site-title"><a class="logo-text" href="/">Ben Coake</a></p>
+  
+  <nav class="site-navigation">
+    <div class="site-navigation-wrap">
+      <h2 class="screen-reader-text">Main navigation</h2>
+      <ul class="menu">
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/">Home</a>
+        </li>
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/about/">About</a>
+        </li>
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/assets/Ben Coake CV.pdf">CV</a>
+        </li>
+        
+        
+        
+        <li class="menu-item ">
+          <a class="" href="/tags/">My Work</a>
+        </li>
+        
+      </ul><!-- .menu -->
+      <button id="menu-close" class="menu-toggle"><span class="screen-reader-text">Close Menu</span><span
+          class="icon-close" aria-hidden="true"></span></button>
+    </div><!-- .site-navigation-wrap -->
+  </nav><!-- .site-navigation -->
+  <button id="menu-open" class="menu-toggle"><span class="screen-reader-text">Open Menu</span><span class="icon-menu" aria-hidden="true"></span></button>
+</header>
 
-  <div class="line"></div>
-</article>
 
+      <main class="main-content fadeInDown delay_075s">
+  <article class="post">
+    <header class="post-header">
+      <h1 class="post-title">404</h1>
+      
+    </header><!-- .post-header -->
+    <div class="post-content">
+      <p>Oops! The page you requested doesn’t exist (yet).<br />
+<a class="error-link" href="/">Go to the home page →</a></p>
 
-    </main>      <footer>
-        © Ben Coake. Made with Jekyll and <a href="https://github.com/PQuod/simply-cyan-theme" target="_blank" rel="noopener noreferrer">Simply Cyan</a>
-      </footer>
-    </div>
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-  const checkbox = document.querySelector('.dark-mode-checkbox');
+    </div><!-- .post-content -->
+  </article><!-- .post -->
+</main><!-- .site-main -->
+      <footer class="site-footer">
+  <div class="offsite-links">
+    
+      
+<a href="https://www.linkedin.com/in/bencoake/" target="_blank" rel="noopener">
+  <span class="fa-linkedin" aria-hidden="true"></span>
+  <span class="screen-reader-text">LinkedIn</span>
+</a>
 
-  checkbox.checked = localStorage.getItem('darkMode') === 'true';
+<a href="https://github.com/bjcke" target="_blank" rel="noopener">
+  <span class="fa-github" aria-hidden="true"></span>
+  <span class="screen-reader-text">GitHub</span>
+</a>
 
-  checkbox.addEventListener('change', function (event) {
-    localStorage.setItem('darkMode', event.currentTarget.checked);
-  });
-});
+    
+  </div><!-- .offsite-links -->
+  <div class="footer-bottom">
+    <div class="site-info">
+      <p>© Scriptor all rights reserved. Theme by <a href="https://www.justgoodthemes.com">JustGoodThemes</a>.</p>
 
-  document.addEventListener('DOMContentLoaded', function () {
-  const checkbox = document.querySelector('.typo-plus-checkbox');
+    </div><!-- .site-info -->
+    <a href="#page" id="back-to-top" class="back-to-top"><span class="screen-reader-text">Back to the top </span>&#8593;</a>
+  </div><!-- .footer-bottom -->
+</footer><!-- .site-footer -->
 
-  checkbox.checked = localStorage.getItem('typoPlus') === 'true';
+    </div><!-- .inner -->
+  </div><!-- .site -->
 
-  checkbox.addEventListener('change', function (event) {
-    localStorage.setItem('typoPlus', event.currentTarget.checked);
-  });
-});
+  <!-- Scripts -->
+  
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
 
-    document.addEventListener('DOMContentLoaded', function () {
-  const checkbox = document.querySelector('.typo-dys-checkbox');
-
-  checkbox.checked = localStorage.getItem('typoDys') === 'true';
-
-  checkbox.addEventListener('change', function (event) {
-    localStorage.setItem('typoDys', event.currentTarget.checked);
-  });
-});
+  ga('create', '', 'auto');
+  ga('send', 'pageview');
 </script>
+  
+  <script src="/assets/js/plugins.js"></script>
+  <script src="/assets/js/custom.js"></script>
+
 </body>
 </html>
