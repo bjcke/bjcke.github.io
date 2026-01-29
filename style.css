@@ -1,0 +1,532 @@
+/* =========================
+   CSS VARIABLES (THEME)
+   Change these to reskin
+   the entire site quickly
+   ========================= */
+
+:root {
+  --background-color: #fffdfd;
+
+  --panel-background: #ca9aa7;
+  --panel-background2:#aa808b;
+  --nav-background: #e5cdd3;
+
+  --text-primary: #371f1f;
+  --text-secondary: #4a3f3f;
+
+  --accent-color: #c43848;
+
+  --panel-radius: 16px;
+  --panel-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================
+   GLOBAL RESET & BASE
+   ========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, Helvetica, Arial, sans-serif;
+
+  background-color: var(--background-color);
+  color: var(--text-primary);
+
+  min-height: 100vh;
+  padding: 2rem 1rem;
+}
+
+body.dark-mode {
+  --background-color: #3b3b3b;
+  --panel-background2:#8d5e69;
+  --panel-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --panel-background: #bd8191;
+  --nav-background: #d7b3bd;
+}
+
+/* =========================
+   NAVIGATION PANEL
+   ========================= */
+
+.nav-panel {
+  /* Center horizontally */
+  margin: 0 auto 1.5rem auto;
+
+  /* Width ~50% of viewport */
+  width: 50%;
+  min-width: 280px;
+  max-width: 700px;
+
+  background-color: var(--nav-background);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+
+  padding: 0.75rem 1.5rem;
+}
+
+/* Navigation list layout */
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* =========================
+   NAV LINKS + HOVER EFFECT
+   ========================= */
+
+.nav-links a {
+  position: relative;
+
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 500;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+
+  transition:
+    color 0.25s ease,
+    background-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+/* Circular highlight on hover */
+.nav-links a::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: 999px;
+  background-color: var(--accent-color);
+  opacity: 0;
+
+  transform: scale(0.8);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+
+  z-index: -1;
+}
+
+.nav-links a:hover {
+  color: white;
+  transform: translateY(-1px);
+}
+
+.nav-links a:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.nav-links a,
+.nav-links .nav-button {
+  font-size: clamp(0.75rem, 3vw, 1rem);
+}
+
+.nav-button {
+  position: relative;
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  font: inherit;
+  color: var(--text-primary);
+  font-weight: 500;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 999px;
+
+  transition:
+    color 0.25s ease,
+    transform 0.2s ease;
+}
+
+/* Same circular hover effect as links */
+.nav-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  border-radius: 999px;
+  background-color: var(--accent-color);
+  opacity: 0;
+
+  transform: scale(0.8);
+  transition: opacity 0.25s ease, transform 0.25s ease;
+
+  z-index: -1;
+}
+
+.nav-button:hover {
+  color: white;
+  transform: translateY(-1px);
+}
+
+.nav-button:hover::before {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* =========================
+   BODY PANEL
+   ========================= */
+
+.body-panel {
+  margin: 0 auto;
+
+  /* Width ~80% of viewport */
+  width: 80%;
+  max-width: 1100px;
+
+  background-color: var(--panel-background);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+
+  padding: 3rem;
+}
+
+.latest-projects {
+  margin: 0 auto;
+
+  /* Width ~80% of viewport */
+  width: 100%;
+  max-width: 1100px;
+
+  background-color: var(--panel-background2);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+
+  padding: 3rem;
+}
+
+.hero-split {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Left text side */
+.hero-text {
+  flex: 1;
+}
+
+/* Right image side */
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.hero-image img {
+  width: 220px;
+  height: 220px;
+
+  object-fit: cover;        /* crop nicely */
+  border-radius: 50%;       /* circle */
+
+  border: 6px solid var(--accent-color); /* colored ring */
+
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* =========================
+   PROJECT PANELS
+   ========================= */
+
+.project-card {
+  --card-bg: #85384d;
+  --card-border: #85384d;
+  --card-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  --card-link: #fffdfd;
+  --card-link-hover: #bd8191;
+  --card-text: #fffdfd;
+
+  background-color: var(--card-bg);
+  border: 2px solid var(--card-border);
+  border-radius: 16px;
+  box-shadow: var(--card-shadow);
+
+  padding: 1.5rem;
+
+  width: 100%;        /* 80% of body-panel */
+  max-width: 100%;   /* never overflow parent */
+  margin: 0 auto 2rem auto; /* center + space between cards */
+}
+
+/* Heading + link */
+.project-card h1,
+.project-card h2,
+.project-card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.project-card h1 a,
+.project-card h2 a,
+.project-card h3 a {
+  color: var(--card-link);
+  text-decoration: none;
+  transition: color 0.25s ease;
+}
+
+.project-card h1 a:hover,
+.project-card h2 a:hover,
+.project-card h3 a:hover {
+  color: var(--card-link-hover);
+}
+
+/* Paragraph styling */
+.project-card p {
+  color: var(--card-text);
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+/* Optional small text */
+.project-card span {
+  font-size: 0.9rem;
+  color: var(--card-text);
+  opacity: 0.7;
+}
+
+/* =========================
+   LATEST PROJECTS HEADER
+   ========================= */
+
+.latest-projects-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+/* Button stays the same */
+.view-all-projects {
+  --btn-bg: var(--accent-color);
+  --btn-text: #ffffff;
+  --btn-hover: #a92f3c;
+
+  padding: 0.6rem 1.2rem;
+  background-color: var(--btn-bg);
+  color: var(--btn-text);
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9rem;
+
+  border-radius: 999px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+
+  transition:
+    background-color 0.25s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.view-all-projects:hover {
+  background-color: var(--btn-hover);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* =========================
+   CONTENT STYLES
+   ========================= */
+
+.hero {
+  margin-bottom: 3rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 600px;
+}
+
+.content h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.75rem;
+}
+
+.content p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 700px;
+}
+
+/* =========================
+   PROJECT FILTERS
+   ========================= */
+.project-filters {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem; /* spacing below filters */
+}
+
+.filter-container {
+  width: 40%; /* total width to center within */
+  display: flex;
+  justify-content: space-between; /* even spacing */
+  gap: 2rem; /* optional spacing between dropdowns */
+}
+
+.filter-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #85384d;
+  border: 2px solid #85384d; /* Transparent border */
+  color: #fffdfd;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  transition: border-color 0.2s ease;
+}
+
+/* Arrow for dropdown */
+.dropdown-btn::after {
+  content: "⌄";
+  margin-left: 0.5rem;
+  font-size: 1rem;
+}
+
+/* Dropdown content container */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #85384d;
+  border: 2px solid #85384d;
+  border-radius: 8px;
+  padding: 1rem;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  min-width: max-content; /* ensures the dropdown fits longest option */
+  width: auto;            /* let it expand */
+}
+
+.filter-dropdown:hover .dropdown-content {
+  display: block; /* Show the dropdown content */
+}
+
+/* Style checkboxes and labels inside dropdown */
+.dropdown-content input[type="checkbox"] {
+  margin-right: 0.5rem;
+}
+
+.dropdown-content label {
+  display: block;
+  font-size: 0.9rem;
+  color: #fffdfd;
+  cursor: pointer;
+  padding: 0.25rem;
+}
+
+.dropdown-content label:hover {
+  background-color: var(--accent-color);
+  color: #fff;
+  border-radius: 4px;
+}
+
+/* Responsive: Stack the dropdowns for mobile */
+@media (max-width: 768px) {
+  .filter-container {
+    flex-direction: column;
+    width: 95%;
+  }
+}
+
+
+/* =========================
+   RESPONSIVENESS
+   ========================= */
+
+@media (max-width: 768px) {
+  .nav-panel {
+    width: 90%;
+  }
+
+  .body-panel {
+    width: 95%;
+    padding: 2rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+
+/* =========================
+   PHONE
+   ========================= */
+
+@media (max-width: 768px) {
+  .nav-panel {
+    width: 90%;
+  }
+
+  .body-panel {
+    width: 95%;
+    padding: 2rem;
+  }
+
+  .hero-split {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p,
+  .project-card p {
+    font-size: 0.7rem;
+  }
+
+  .hero-image img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .project-card h1,
+  .project-card h2,
+  .project-card h3 {
+    font-size: 0.8rem;
+  }
+
+  .latest-projects-header h1,
+  .latest-projects-header h2,
+  .latest-projects-header h3 {
+    font-size: 1.2rem;
+  }
+
+  .view-all-projects {
+    font-size: 0.6rem;
+  }  
+
+}
+

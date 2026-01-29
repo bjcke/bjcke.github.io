@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Ben Coake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- =========================
+       NAVIGATION PANEL
+       ========================= -->
+  <nav class="nav-panel">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="/assets/curriculum_vitae.pdf">CV</a></li>
+      <li>
+        <button id="theme-toggle" class="nav-button">Dark Mode</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- =========================
+       MAIN BODY PANEL
+       ========================= -->
+  <main class="body-panel">
+
+    <!-- Content Placeholder -->
+    <section class="content">
+      <h1>Projects</h1>
+      <br>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <div 
+        class="project-card"
+        data-type="academic"
+        data-discipline="python,ml"
+        data-date="2025-06-01"
+      >
+        <h3>
+          <a href="bop_flop_1/index.html">Bop or Flop? A Semi-Supervised Approach to Predicting Song Popularity via Spotify Audio Features</a>
+        </h3>
+        <p>Explores using a combination of ML methods (K-Means Clustering, Random Forest) to predict song popularity.</p>
+      </div>
+
+      <div 
+        class="project-card"
+        data-type="academic"
+        data-discipline="python,ml,statistics"
+        data-date="2025-10-01"
+      >
+        <h3>
+          <a href="bop_flop_2/index.html">Bop or Flop 2.0: Advanced ML Methods for Spotify Song Popularity Prediction</a>
+        </h3>
+        <p>Second iteration of the song popularity project, with a focus on Bayesian Statistics.</p>
+      </div>
+
+      <div 
+        class="project-card"
+        data-type="business"
+        data-discipline="gsheets,dashboards"
+        data-date="2023-10-01"
+      >
+        <h3>
+          <a href="l4_analyst/index.html">Data Analyst Portfolio</a>
+        </h3>
+        <p>Portfolio for a Level 4 Data Analyst Apprenticeship, achieving a Distinction.</p>
+      </div>
+
+      <div 
+        class="project-card"
+        data-type="personal"
+        data-discipline="gsheets"
+        data-date="2025-08-01"
+      >
+        <h3>
+          <a href="https://docs.google.com/spreadsheets/d/1sXHTt2YxpofzPIDWHAxEqQsjtr_g6izr5cypilGRS6A/edit?gid=954915003#gid=954915003">Tournament Engine</a>
+        </h3>
+        <p>I was approached to create a fully automated table tennis tournament engine in Google Sheets.</p>
+      </div>
+
+      <div 
+        class="project-card"
+        data-type="business"
+        data-discipline="gsheets"
+        data-date="2025-07-01"
+      >
+        <h3>
+          <a href="https://docs.google.com/spreadsheets/d/1v_2U-OwhAOcu65zSfYfNqPQZvD4OZfNptObzhxq5wRg/edit?gid=0#gid=0">JSON Generator</a>
+        </h3>
+        <p>Created a customisable JSON request generator for running API PUT calls.</p>
+      </div>
+      
+      <div id="no-projects-message" style="display: none;">
+        No projects match the selected filters.
+      </div>
+
+    </section>
+
+  </main>
+
+<script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    // Function to apply theme
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleBtn.textContent = "Light Mode";
+      } else {
+        document.body.classList.remove("dark-mode");
+        toggleBtn.textContent = "Dark Mode";
+      }
+    }
+
+    // Load theme on page load
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    }
+
+    // Toggle button click
+    toggleBtn.addEventListener("click", () => {
+      const isDark = document.body.classList.toggle("dark-mode");
+      const theme = isDark ? "dark" : "light";
+
+      localStorage.setItem("theme", theme); // save the theme
+      applyTheme(theme);
+  });
+</script>
+
+</body>
+</html>
