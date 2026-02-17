@@ -356,6 +356,10 @@ body.dark-mode {
   max-width: 600px;
 }
 
+.content {
+  width: 100%;
+}
+
 .content h2 {
   font-size: 1.6rem;
   margin-bottom: 0.75rem;
