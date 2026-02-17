@@ -46,11 +46,17 @@
     <!-- Content Placeholder -->
     <section class="content">
       <h2>A bit about me...</h2>
-      <p>
-        Insert about section here....
-      </p>
-      <br>
+      <div id="about-content"></div>
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+      fetch('about.md')
+        .then(response => response.text())
+        .then(text => {
+          document.getElementById('about-content').innerHTML = marked.parse(text);
+        });
+    </script>
 
     <br>
 

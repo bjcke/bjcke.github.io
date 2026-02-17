@@ -364,7 +364,26 @@ body.dark-mode {
 .content p {
   color: var(--text-secondary);
   line-height: 1.6;
-  max-width: 700px;
+  max-width: 100%;
+}
+
+.content ul,
+.content ol {
+  margin: 1rem 0;
+  padding-left: 1.5rem;   /* restores indentation */
+  color: var(--text-secondary);
+}
+
+.content li {
+  margin-bottom: 0.5rem;
+}
+
+.content ul {
+  list-style-type: disc;
+}
+
+.content ol {
+  list-style-type: decimal;
 }
 
 /* =========================
