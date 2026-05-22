@@ -38,5 +38,13 @@ const PROJECTS = [
     type: "personal",
     discipline: ["gsheets"],
     description: "Created a customisable JSON request generator for running API PUT calls."
+  },
+  {
+    title: "Hypothesis Testing: Paired t-test example",
+    url: "/work/t_test_trees/index.html",
+    date: "2026-03-01",
+    type: "personal",
+    discipline: ["statistics"],
+    description: "Explores data given to me by a friend doing a dissertation for Biology undergrad. I helped visualise and conduct a hypothesis test for their assumption."
   }
 ];
