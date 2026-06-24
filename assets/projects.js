@@ -46,5 +46,13 @@ const PROJECTS = [
     type: "personal",
     discipline: ["statistics"],
     description: "Explores data given to me by a friend doing a dissertation for Biology undergrad. I helped visualise and conduct a hypothesis test for their assumption."
+  },
+  {
+    title: "Capstone Project",
+    url: "/work-capstone/index.html",
+    date: "2026-06-01",
+    type: "academic",
+    discipline: ["statistics"],
+    description: "Urban analytics project focussed on analysing crime patterns and outcomes between rural and urban areas in Kent."
   }
 ];

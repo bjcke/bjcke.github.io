@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projects - Ben Coake</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Link to stylesheet -->
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+
+  <!-- =========================
+       NAVIGATION PANEL
+       ========================= -->
+  <nav class="nav-panel">
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/work/index.html">Projects</a></li>
+      <li><a href="/assets/curriculum_vitae.pdf">CV</a></li>
+      <li>
+        <button id="theme-toggle" class="nav-button">Dark Mode</button>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- =========================
+       MAIN BODY PANEL
+       ========================= -->
+  <main class="body-panel">
+
+    <!-- Content Placeholder -->
+    <section class="content">
+      <h1>Capstone Project</h1>
+      <br>
+    </section>
+
+    <!-- Projects -->
+    <section class="projects">
+      <div 
+        class="project-card"
+        data-type="academic"
+        data-discipline="python,ml,statistics"
+        data-date="2025-06-01"
+      >
+        <h3>
+          <a href="project_brief/brief.pdf">Project Brief</a>
+        </h3>
+      </div>
+
+      <div 
+        class="project-card"
+        data-type="academic"
+        data-discipline="python,ml,statistics"
+        data-date="2025-06-01"
+      >
+        <h3>
+          <a href="notebook/index.html">Python Notebook</a>
+        </h3>
+      </div>
+
+      <div 
+        class="project-card"
+        data-type="academic"
+        data-discipline="python,ml,statistics"
+        data-date="2025-06-01"
+      >
+        <h3>
+          <a href="/index.html">Poster Presentation</a>
+        </h3>
+      </div>
+      
+      <div id="no-projects-message" style="display: none;">
+        No projects match the selected filters.
+      </div>
+
+    </section>
+
+  </main>
+
+<script>
+    const toggleBtn = document.getElementById("theme-toggle");
+
+    // Function to apply theme
+    function applyTheme(theme) {
+      if (theme === "dark") {
+        document.body.classList.add("dark-mode");
+        toggleBtn.textContent = "Light Mode";
+      } else {
+        document.body.classList.remove("dark-mode");
+        toggleBtn.textContent = "Dark Mode";
+      }
+    }
+
+    // Load theme on page load
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+      applyTheme(savedTheme);
+    }
+
+    // Toggle button click
+    toggleBtn.addEventListener("click", () => {
+      const isDark = document.body.classList.toggle("dark-mode");
+      const theme = isDark ? "dark" : "light";
+
+      localStorage.setItem("theme", theme); // save the theme
+      applyTheme(theme);
+  });
+</script>
+
+</body>
+</html>
