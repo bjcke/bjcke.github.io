@@ -1,6 +1,6 @@
 I specialise in analytics, product delivery and insight generation for high-scale Ad Tech systems, covering addressable ad-serving platforms reaching 30M+ users. I construct answers, interrogate data at scale, and deliver conversion measurement that shapes advertising and sales strategy.<br><br>
 
-I work confidently with R, Python and SQL, and regularly use tools such as Databricks & GCP. I'm also comfortable working with APIs and constructing JSON requests. I have a particular interest in automation and a well-earned appreciation for Google Sheets; cloud-based spreadsheets are far more powerful than most people give than credit for!<br><br>
+I work confidently with R, Python and SQL, and regularly use tools such as Databricks & GCP. I'm also comfortable working with APIs and constructing JSON requests. I have a particular interest in automation and a well-earned appreciation for Google Sheets; cloud-based spreadsheets are far more powerful than most people give them credit for!<br><br>
 
 Academically, I hold a Bachelor's degree in Mathematics, and am currently completing a Master's in Statistical Data Science. My undergrad dissertation focused on Topology, exploring the topological classification of surfaces — research that deepened my appreciation for the abstract side of maths. Many of my recent Master's projects explore data using music-adjacent themes, balancing technical depth with my personal interests.<br><br>
 
