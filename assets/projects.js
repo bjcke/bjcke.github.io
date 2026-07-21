@@ -54,5 +54,13 @@ const PROJECTS = [
     type: "academic",
     discipline: ["statistics"],
     description: "Urban analytics project focussed on analysing crime patterns and outcomes between rural and urban areas in Kent."
+  },
+  {
+    title: "Advanced Google Sheets",
+    url: "https://docs.google.com/spreadsheets/d/1GJMqsj4L_tN1F-TeECmiqH807QpGmKl0McaamKVSaJs",
+    date: "2026-07-01",
+    type: "business",
+    discipline: ["gsheets"],
+    description: "Created an advanced Google Sheets pack with example data and formulae. Commonly used for Data Analyst upskilling in the workplace."
   }
 ];
