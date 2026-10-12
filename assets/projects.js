@@ -65,7 +65,7 @@ const PROJECTS = [
   },
   {
     title: "Geo Visualisation: Creating BI templates",
-    url: "/topojson/index.html",
+    url: "/work/topojson/index.html",
     date: "2026-10-01",
     type: "business,bi",
     discipline: ["python"],
