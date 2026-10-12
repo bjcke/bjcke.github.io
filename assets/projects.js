@@ -62,5 +62,13 @@ const PROJECTS = [
     type: "business",
     discipline: ["gsheets"],
     description: "Created an advanced Google Sheets pack with example data and formulae. Commonly used for Data Analyst upskilling in the workplace."
+  },
+  {
+    title: "Geo Visualisation: Creating BI templates",
+    url: "/topojson/index.html",
+    date: "2026-10-01",
+    type: "business,bi",
+    discipline: ["python"],
+    description: "Demonstrates a complex task converting an SVG shape file into TopoJSON. This was a requriement for custom geo visualisations in ThoughtSpot, a AI-powered BI tool."
   }
 ];
